@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC Game - Computer Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KBC Style Game</h1>
+        <div id="question">Waiting for players...</div>
+        <div id="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://192.168.0.103:5500/player.html" alt="QR Code">
+        </div>
+        <div id="winner-message"></div>
+        <button id="next-question" style="display:none;" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
